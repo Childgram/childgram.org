@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Childgram — неофициальный Telegram-клиент для Android с ограничением доступа к незнакомым каналам, группам и ботам.">
+  <meta name="theme-color" content="#1bbb8d">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://update.childgram.org; object-src 'none'; base-uri 'none'">
+  <title>Childgram — общение в знакомом кругу</title>
+  <link rel="canonical" href="https://childgram.org/">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="release.js" defer></script>
+</head>
+<body>
+  <header class="wrap header">
+    <a class="brand" href="./" aria-label="Childgram — главная"><img src="logo.svg" width="36" height="36" alt="">Childgram</a>
+    <a class="source" href="https://github.com/Childgram/cg-android">Исходный код <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Для Android</p>
+        <h1 id="title">Общение<br>в знакомом<br><span>кругу.</span></h1>
+        <p class="intro">Привычный Telegram — с ограничением доступа к незнакомым каналам, группам и ботам. И с понятной статистикой времени в чатах.</p>
+        <div class="download">
+          <a class="button" id="download" href="https://github.com/Childgram/cg-android/releases">Открыть релизы <span aria-hidden="true">↗</span></a>
+          <p id="release-status" class="meta" role="status">Ранняя версия для тестирования · Android ARM64</p>
+          <noscript><p class="meta">Доступные APK и описание версий — на странице релизов.</p></noscript>
+        </div>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <img class="hero-logo" src="logo.svg" width="224" height="224" alt="">
+        <div class="note note-one"><span>✓</span> Знакомые чаты</div>
+        <div class="note note-two"><span>◷</span> Время под рукой</div>
+      </div>
+    </section>
+    <section class="features" aria-label="Что меняется">
+      <article><span class="number">01</span><h2>Знакомый круг</h2><p>Каналы и группы доступны, когда аккаунт уже в них состоит. Доступ к незнакомым ботам ограничен.</p></article>
+      <article><span class="number">02</span><h2>Время на виду</h2><p>Посмотрите, сколько времени ушло на чаты и видео. Статистика хранится на устройстве.</p></article>
+      <article><span class="number">03</span><h2>Обновления рядом</h2><p>Приложение сообщит о новой версии. Скачать и установить её можно по вашему решению.</p></article>
+    </section>
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Знакомый клиент.<br>Открытый проект.</h2>
+      <div><p>Childgram — неофициальный клиент на основе открытого кода Telegram для Android. Это самостоятельный проект, не связанный с командой Telegram.</p>
+      <p>Сейчас это ранняя версия: фоновая доставка сообщений и звонков ещё проходит проверку. Childgram не заменяет системный родительский контроль.</p>
+      <a href="https://github.com/Childgram/cg-android/releases" id="release-notes">Версии и список изменений <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>Childgram</span><div><a href="https://github.com/Childgram/cg-android">Код и обратная связь</a><a href="https://github.com/DrKLO/Telegram">Основа — Telegram</a></div></footer>
+</body>
+</html>

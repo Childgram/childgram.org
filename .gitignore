@@ -1,0 +1,9 @@
+# Independent Android checkout, including its build results and local keys.
+/android/
+/.local/
+.DS_Store
+.idea/
+__pycache__/
+
+# Project instructions belong here even with a global ignore rule.
+!AGENTS.md

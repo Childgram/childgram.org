@@ -3,9 +3,9 @@
 Неофициальный Telegram-клиент с ограничением доступа к незнакомым каналам,
 группам и ботам и локальной статистикой времени использования.
 
-**Статус: сайт, исходники и первый Android-prerelease опубликованы.**
+**Статус: сайт, исходники и Android-prerelease опубликованы.**
 
-[Версия 0.1.0-alpha.1](https://github.com/Childgram/cg-android/releases/tag/v0.1.0-alpha.1)
+[Версия 0.1.0-alpha.2](https://github.com/Childgram/cg-android/releases/tag/v0.1.0-alpha.2)
 доступна для тестирования. APK можно скачать с сайта без входа в GitHub.
 
 Сайт: [childgram.org](https://childgram.org). Лента обновлений:
@@ -20,7 +20,7 @@ Childgram/                  репозиторий общих документо
 ├── branding/               общий SVG-логотип, PNG и экспорт для платформ
 ├── site/                   сайт childgram.org, публикуемый через GitHub Pages
 ├── doc/
-│   ├── release.md          подготовка первого релиза
+│   ├── release.md          журнал подготовки и проверки выпусков
 │   └── updates.md          обновления приложения, черновики и домены
 └── android/                независимый репозиторий Android-клиента
     ├── .git/               исходная история Telegram и изменения Childgram
@@ -67,7 +67,7 @@ PNG и Android-ресурсы обновляются командой `python3 b
 - [Описание клиента](https://github.com/Childgram/cg-android#readme).
 - [Разработка, сборка, подпись и проверки](https://github.com/Childgram/cg-android/blob/master/dev/README.md).
 - [Правила работы с Android](https://github.com/Childgram/cg-android/blob/master/AGENTS.md).
-- [Подготовка первого релиза](doc/release.md).
+- [Журнал выпусков Android](doc/release.md).
 
 Команды из корня этой рабочей директории:
 

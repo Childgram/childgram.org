@@ -3,10 +3,10 @@
 Неофициальный Telegram-клиент с ограничением доступа к незнакомым каналам,
 группам и ботам и локальной статистикой времени использования.
 
-**Статус: сайт и исходники опубликованы; первый Android-релиз собран и проверен в черновике.**
+**Статус: сайт, исходники и первый Android-prerelease опубликованы.**
 
-[Черновик 0.1.0-alpha.1](https://github.com/Childgram/cg-android/releases/tag/untagged-50dacd2743efd776a4a0)
-доступен участникам репозитория. Публичный выпуск APK ещё не выполнен.
+[Версия 0.1.0-alpha.1](https://github.com/Childgram/cg-android/releases/tag/v0.1.0-alpha.1)
+доступна для тестирования. APK можно скачать с сайта без входа в GitHub.
 
 Сайт: [childgram.org](https://childgram.org). Лента обновлений:
 [update.childgram.org/android.json](https://update.childgram.org/android.json).
@@ -85,6 +85,6 @@ Upstream: [DrKLO/Telegram](https://github.com/DrKLO/Telegram).
 Репозиторий Android, GitHub Fork от Telegram:
 [Childgram/cg-android](https://github.com/Childgram/cg-android).
 В Android настроены `origin` (наш форк) и `upstream` (Telegram).
-Исходники Childgram опубликованы в `master`; APK до ручной публикации остаётся
-в черновике GitHub Releases. Общие документы и сайт:
+Исходники Childgram опубликованы в `master`; подписанные APK размещаются
+в GitHub Releases после ручной публикации черновика. Общие документы и сайт:
 [Childgram/childgram.org](https://github.com/Childgram/childgram.org).

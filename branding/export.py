@@ -44,6 +44,8 @@ def vector(scale, with_background, size):
 
 files = {
     "mipmap-anydpi/childgram_launcher.xml": vector(1, True, 48),
+    # anydpi takes priority over Telegram's density-specific notification bitmaps.
+    "drawable-anydpi-v21/notification.xml": vector(1, False, 24),
     # Keep the whole mark inside the central safe area for launcher masks.
     "drawable/childgram_foreground.xml": vector(0.6, False, 108),
     "mipmap-anydpi-v26/childgram_launcher.xml": '''<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
@@ -88,4 +90,4 @@ assert usage.get("viewBox") == "0 0 24 24"
 )
 subprocess.run(["rsvg-convert", "-w", "512", "-h", "512",
                 str(ROOT / "childgram-usage.svg"), "-o", str(ROOT / "childgram-usage.png")], check=True)
-print("Exported 2 PNGs and 6 Android resources from the shared SVGs")
+print("Exported 2 PNGs and 7 Android resources from the shared SVGs")

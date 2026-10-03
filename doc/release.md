@@ -5,16 +5,18 @@
 - Android-клиент находится в независимом репозитории `android/`.
 - Основа: Telegram **12.10.6 (7112)**, коммит
   `f2908b14133bbffbf7ab04f641ecb5bfaf533242`.
-- Текущая рабочая ветка: `childgram-dev`; изменения Childgram пока не закоммичены.
+- Локальная рабочая ветка: `childgram-dev`, отслеживает `origin/master`.
+  Изменения Childgram опубликованы в коммите `95dd1d82`; настройка ресурсов
+  GitHub runner — в `bf1ad815`.
 - История коммитов Telegram догружена до корня, shallow-ограничение снято.
   Содержимое старых файлов загружается по запросу (`blob:none` у `upstream`);
   для ещё не скачанных исторических версий потребуется сеть. Текущие исходники
   и закреплённые подмодули находятся локально.
 - Кандидат: **0.1.0-alpha.1**, код версии **1**, пакет **`org.childgram`**, ARM64.
 - Выпускной ключ существует в `android/.local/signing/`; публичный отпечаток
-  закреплён в [release-certificate.sha256](../android/dev/release-certificate.sha256).
+  закреплён в [release-certificate.sha256](https://github.com/Childgram/cg-android/blob/master/dev/release-certificate.sha256).
 - Ранее выполненные проверки и ограничения описаны в
-  [руководстве Android](../android/dev/README.md). Их даты не означают, что
+  [руководстве Android](https://github.com/Childgram/cg-android/blob/master/dev/README.md). Их даты не означают, что
   текущий кандидат прошёл все проверки публичного релиза.
 
 ## Репозиторий Android
@@ -32,14 +34,16 @@ upstream  https://github.com/DrKLO/Telegram.git
 origin    https://github.com/Childgram/cg-android.git
 ```
 
-Изменения Childgram и APK ещё не отправлены. У верхнего репозитория документов
-будет собственный remote, если понадобится его публикация.
+Исходники Childgram отправлены в форк с сохранением upstream-истории.
+Общие документы и сайт опубликованы отдельно в
+[Childgram/childgram.org](https://github.com/Childgram/childgram.org).
+APK готовится отдельным workflow в черновик для ручной проверки и публикации.
 Инструкция GitHub: [создание форка](https://docs.github.com/en/pull-requests/how-tos/work-with-forks/fork-a-repo).
 
 ## До публикации
 
 - [x] Настроить GitHub Fork и проверить `origin` / `upstream`.
-- [ ] Проверить diff Childgram к закреплённому upstream, состав коммита и отсутствие
+- [x] Проверить diff Childgram к закреплённому upstream, состав коммита и отсутствие
   локальных ключей, реквизитов, журналов и пользовательских данных.
 - [ ] Закоммитить исходники и инструменты, выбрать выпускной тег; собрать APK
   именно из публикуемого состояния исходников.

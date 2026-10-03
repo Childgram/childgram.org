@@ -3,7 +3,10 @@
 Неофициальный Telegram-клиент с ограничением доступа к незнакомым каналам,
 группам и ботам и локальной статистикой времени использования.
 
-**Статус: подготовка первого Android-релиза. Публичный выпуск ещё не выполнен.**
+**Статус: сайт и исходники опубликованы; первый Android-релиз готовится в черновик.**
+
+Сайт: [childgram.org](https://childgram.org). Лента обновлений:
+[update.childgram.org/android.json](https://update.childgram.org/android.json).
 
 ## Рабочая директория
 
@@ -30,6 +33,12 @@ Childgram/                  репозиторий общих документо
 Android-форка исходную структуру Telegram для сравнения и обновления кода.
 Клонирование верхнего репозитория само по себе не загружает Android-клиент.
 
+```sh
+git clone https://github.com/Childgram/childgram.org.git Childgram
+cd Childgram
+git clone --recursive --shallow-submodules https://github.com/Childgram/cg-android.git android
+```
+
 Сайт и выпуск Android: [порядок публикации и подключения доменов](doc/updates.md).
 Локальный предпросмотр сайта: `node site/check.cjs && python3 site/build.py`, затем
 `python3 -m http.server 8766 --bind 127.0.0.1 --directory .local/site`.
@@ -51,9 +60,9 @@ PNG и Android-ресурсы обновляются командой `python3 b
 сборке Android верхний репозиторий не нужен. Маску адаптивной иконки задаёт Android;
 белый знак уменьшен до безопасной области и доступен в монохромном варианте.
 
-- [Описание клиента](android/README.md).
-- [Разработка, сборка, подпись и проверки](android/dev/README.md).
-- [Правила работы с Android](android/AGENTS.md).
+- [Описание клиента](https://github.com/Childgram/cg-android#readme).
+- [Разработка, сборка, подпись и проверки](https://github.com/Childgram/cg-android/blob/master/dev/README.md).
+- [Правила работы с Android](https://github.com/Childgram/cg-android/blob/master/AGENTS.md).
 - [Подготовка первого релиза](doc/release.md).
 
 Команды из корня этой рабочей директории:
@@ -72,5 +81,6 @@ Upstream: [DrKLO/Telegram](https://github.com/DrKLO/Telegram).
 Репозиторий Android, GitHub Fork от Telegram:
 [Childgram/cg-android](https://github.com/Childgram/cg-android).
 В Android настроены `origin` (наш форк) и `upstream` (Telegram).
-Изменения Childgram и APK пока не опубликованы.
-Верхний репозиторий пока локальный, без удалённого адреса.
+Исходники Childgram опубликованы в `master`; APK до ручной публикации остаётся
+в черновике GitHub Releases. Общие документы и сайт:
+[Childgram/childgram.org](https://github.com/Childgram/childgram.org).

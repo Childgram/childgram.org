@@ -2,6 +2,8 @@
 
 - The workspace root is a separate repository for shared project documentation,
   branding and development instructions. Keep shared documents under `doc/`.
+  Its remote is `Childgram/childgram.org`; `main` publishes the website through
+  GitHub Pages at `https://childgram.org`.
 - Shared brand sources live in `branding/`, beside `android/`. Treat
   `branding/childgram-logo.svg` as the master; regenerate platform resources
   with `python3 branding/export.py`. Android builds use committed exports only.

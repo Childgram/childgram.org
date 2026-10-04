@@ -42,11 +42,16 @@ Android — самостоятельный GitHub-форк `DrKLO/Telegram` с �
 Текущая лента отдаёт `0.1.0-alpha.2` (code 2) и прямую ссылку на APK;
 сайт получает версию и кнопку скачивания из этой ленты.
 
-Environment `release` содержит пять необходимых secrets и разрешает только
+Environment `release` содержит пять настроенных secrets и разрешает только
 ветку `master`; reviewer — `sozidatel`. Первая сборка подтверждена на основании
 явного разрешения владельца проекта. Ключ перенесён существующий, не создан заново.
 Environment `github-pages` разрешает `master` и теги `v*` для ленты, `main` для сайта.
 DNS настроил владелец; агент не менял записи у регистратора.
+
+Для подготовленного исправления карт требуется шестой secret
+`CHILDGRAM_GOOGLE_MAPS_API_KEY` — значение отдельного ключа
+**Childgram Android Maps** из проекта `child-gram`. Workflow уже читает его;
+добавление значения в GitHub пока не выполнено.
 
 Успешные первые публикации:
 [сайт](https://github.com/Childgram/childgram.org/actions/runs/37139746741),
@@ -97,10 +102,11 @@ GitHub runners: полный запуск занял **32 мин 37 с**, по
    сохранив upstream-историю. Создать отдельный публичный репозиторий для
    верхнего каталога и опубликовать его `main`.
 2. В Android создать environment `release` с ограничением на `master` и ручным
-   подтверждением запуска. Перенести существующие реквизиты в пять secrets:
+   подтверждением запуска. Перенести существующие реквизиты в шесть secrets:
    `TELEGRAM_API_ID`, `TELEGRAM_API_HASH`, `CHILDGRAM_RELEASE_KEY_BASE64`,
    `CHILDGRAM_RELEASE_KEY_PASSWORD`, `CHILDGRAM_GOOGLE_SERVICES_JSON`
-   (клиентская конфигурация Firebase `child-gram`, не серверный приватный ключ).
+   (клиентская конфигурация Firebase `child-gram`, не серверный приватный ключ),
+   `CHILDGRAM_GOOGLE_MAPS_API_KEY` (только Maps SDK for Android и выпускная подпись).
    Выпускной ключ не регенерировать;
    сохранять отдельную резервную копию. Сам ключ передаётся только в secrets
    GitHub и временный runner, не в Git или релизные assets.

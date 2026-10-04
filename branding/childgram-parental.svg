@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>Childgram parental control</title>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+    d="M12 2.75 L20 6 V11.5 C20 16.25 16.6 19.5 12 21.25 C7.4 19.5 4 16.25 4 11.5 V6 Z"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+    d="M9.5 10.5 V8.75 A2.5 2.5 0 0 1 14.5 8.75 V10.5 M9 10.5 H15 Q15.5 10.5 15.5 11 V15 Q15.5 15.5 15 15.5 H9 Q8.5 15.5 8.5 15 V11 Q8.5 10.5 9 10.5 Z M12 12.5 V13.5"/>
+</svg>
